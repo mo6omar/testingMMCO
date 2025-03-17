@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="شركة الفلزات الحديثة للتجارة">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="شركة الفلزات الحديثة للتجارة - متخصصون في تعديل الفولاذ المقاوم للصدأ في الرياض، المملكة العربية السعودية">
+  <title>شركة الفلزات الحديثة للتجارة | متخصصون في الفولاذ المقاوم للصدأ</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- Google Fonts - Add Tajawal for Arabic -->
+  <!-- Google Fonts - Add Tajawal for Arabic -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset CSS */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Global Styles */
+    :root {
+      --primary-color: #1a5276;
+      --secondary-color: #2980b9;
+      --accent-color: #f39c12;
+      --text-color: #333;
+      --light-bg: #f9f9f9;
+      --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      --transition: all 0.3s ease;
+      --header-height: 80px;
+      /* For fixed header calculation */
+      --nav-height: 60px;
+      /* For fixed nav calculation */
+    }
+
+    body {
+      font-family: 'Tajawal', sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+      background-color: var(--light-bg);
+      text-align: right;
+      /* Add padding for fixed headers */
+      padding-top: calc(var(--header-height) + var(--nav-height));
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: calc(var(--header-height) + var(--nav-height) + 20px);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--primary-color);
+      transition: var(--transition);
+    }
+
+    a:hover {
+      color: var(--accent-color);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    /* Header Styles - FIXED */
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      height: var(--header-height);
+    }
+
+    .top-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      flex-wrap: wrap;
+      height: 100%;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .contact-info p,
+    .contact-info a {
+      margin: 0.3rem 0 0.3rem 1.5rem;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+
+    .contact-info i {
+      margin-left: 0.5rem;
+      color: var(--accent-color);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      width: 50px;
+      margin-left: 1rem;
+      border-radius: 100%;
+    }
+
+    .logo-container h1 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: white;
+    }
+
+    /* Navigation - FIXED */
+    .main-nav {
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 0.5rem 0;
+      position: fixed;
+      top: var(--header-height);
+      left: 0;
+      right: 0;
+      z-index: 999;
+      height: var(--nav-height);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+    }
+
+    .nav-links {
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-left: 1.5rem;
+    }
+
+    .nav-links a {
+      color: var(--primary-color);
+      font-weight: 500;
+      font-size: 1rem;
+      padding: 0.5rem 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-links i {
+      margin-left: 0.5rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-color);
+    }
+
+    .language-selector {
+      display: flex;
+      align-items: center;
+    }
+
+    .language-option {
+      display: flex;
+      align-items: center;
+      margin-right: 1rem;
+    }
+
+    .language-option a {
+      display: flex;
+      align-items: center;
+      color: var(--primary-color);
+      transition: transform 0.2s ease;
+      padding: 4px;
+    }
+
+    .language-option a:hover {
+      transform: translateY(-2px);
+      color: var(--accent-color);
+    }
+
+    .language-option img {
+      width: 35px;
+      height: 20px;
+      margin-left: 0.5rem;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+
+    /* Page Header */
+    .page-header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 2rem 0;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .page-header h2 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .page-header p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Products Category Section */
+    .products-section {
+      padding: 2rem 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .section-title h2 {
+      font-size: 2rem;
+      color: var(--primary-color);
+      position: relative;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+
+    .section-title h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background-color: var(--accent-color);
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    /* Product Card Styling (Replaced Flip Card) */
+    .product-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: var(--card-shadow);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .image-container {
+      position: relative;
+      width: 100%;
+      height: 250px;
+      overflow: hidden;
+    }
+
+    .card-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1.5s ease-in-out;
+    }
+
+    .card-image.active {
+      opacity: 1;
+    }
+
+    .card-content {
+      padding: 1.5rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+
+    .card-content h3 {
+      font-size: 1.5rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .card-content p {
+      margin-bottom: 1.5rem;
+      color: var(--text-color);
+      flex-grow: 1;
+    }
+
+    .view-collection-btn {
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      background-color: var(--accent-color);
+      color: white;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: var(--transition);
+      margin-top: auto;
+    }
+
+    .view-collection-btn:hover {
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    /* Product Collection Section */
+    .collection-section {
+      padding: 3rem 0;
+      background-color: white;
+      margin-top: 2rem;
+    }
+
+    .collection-section:nth-child(even) {
+      background-color: #f5f8fa;
+    }
+
+    .collection-header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-top: 2rem;
+    }
+
+    .collection-header h2 {
+      font-size: 2.2rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .collection-header p {
+      max-width: 800px;
+      margin: 0 auto;
+      color: #666;
+    }
+
+    .process-title {
+      text-align: center;
+      margin: 3rem 0 2rem;
+    }
+
+    .process-title h3 {
+      font-size: 1.8rem;
+      color: var(--primary-color);
+      display: inline-block;
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+
+    .process-title h3::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 2px;
+      background-color: var(--accent-color);
+    }
+
+    /* Process Cards */
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .process-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: var(--card-shadow);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .process-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .process-images {
+      display: flex;
+      height: 300px;
+    }
+
+    .before-image,
+    .after-image {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      border: solid 1px white;
+    }
+
+    .before-image::after,
+    .after-image::after {
+      content: 'قبل';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 5px 10px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .after-image::after {
+      content: 'بعد';
+      left: auto;
+      right: 0;
+    }
+
+    .opened-image::after {
+      content: 'مفتوح';
+    }
+
+    .closed-image::after {
+      content: 'مغلق';
+    }
+
+    .process-images img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Single Image Card */
+    .single-image {
+      height: 300px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .single-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .process-content {
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .process-content h4 {
+      font-size: 1.3rem;
+      color: var(--primary-color);
+      margin-bottom: 0.8rem;
+    }
+
+    .process-content p {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    /* Back to Top Button */
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: var(--primary-color);
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s, visibility 0.3s;
+      z-index: 99;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .back-to-top:hover {
+      background-color: var(--accent-color);
+      color: white;
+    }
+
+
+
+    /* Footer */
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 2rem 0;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 2rem;
+    }
+
+    .footer-contact h3 {
+      margin-bottom: 23px;
+    }
+
+    .footer-info {
+      padding-left: 1rem;
+    }
+
+    .footer-info p {
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .footer-logo img {
+      width: 40px;
+      margin-left: 0.5rem;
+      border-radius: 100%;
+      background-color: white;
+    }
+
+    .footer-logo h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .social-links a {
+      display: flex;
+      align-items: center;
+      color: white;
+      font-size: 0.9rem;
+      transition: var(--transition);
+    }
+
+    .social-links a:hover {
+      color: var(--accent-color);
+      transform: translateY(-3px);
+    }
+
+    .social-links i {
+      font-size: 1.2rem;
+      margin-left: 0.5rem;
+    }
+
+    .copyright {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.7);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 1rem;
+    }
+
+    /* Footer Contact */
+    .footer-contact p,
+    .footer-contact a {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.8rem;
+      color: white;
+    }
+
+    .footer-contact i {
+      min-width: 20px;
+      margin-left: 0.8rem;
+      color: var(--accent-color);
+    }
+
+    /* Table container for centering */
+    .table-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    /* Steel Sheets Table Styles */
+    .steel-sheets-table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .steel-sheets-table thead {
+      background-color: #1a5276;
+      /* Primary color from your existing CSS */
+      color: white;
+    }
+
+    .steel-sheets-table th {
+      padding: 1rem;
+      text-align: right;
+      font-weight: 500;
+    }
+
+    .steel-sheets-table td {
+      padding: 0.8rem 1rem;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    .steel-sheets-table tbody tr:hover {
+      background-color: #f5f8fa;
+      transition: background-color 0.3s ease;
+    }
+
+    .steel-sheets-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Responsive adjustments just for this table */
+    @media (max-width: 768px) {
+
+      .steel-sheets-table th,
+      .steel-sheets-table td {
+        padding: 0.7rem;
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+
+      .steel-sheets-table th,
+      .steel-sheets-table td {
+        padding: 0.6rem 0.5rem;
+        font-size: 0.8rem;
+      }
+    }
+
+
+
+
+
+    /* Responsive Design */
+    @media (max-width: 992px) {
+      .top-header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .contact-info {
+        justify-content: center;
+        margin-top: 1rem;
+      }
+
+      .footer-content {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-contact {
+        text-align: center;
+      }
+
+      .footer-contact p,
+      .footer-contact a {
+        justify-content: center;
+      }
+
+      .social-links {
+        justify-content: center;
+      }
+
+      /* Adjusted heights for smaller screens */
+      :root {
+        --header-height: 120px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-container {
+        flex-direction: column;
+      }
+
+      .nav-links {
+        margin-bottom: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .nav-links li {
+        margin: 0.5rem 0.75rem;
+      }
+
+      .language-selector {
+        justify-content: center;
+      }
+
+      .contact-info p,
+      .contact-info a {
+        margin: 0.3rem 0.7rem;
+        justify-content: center;
+      }
+
+      .footer-logo {
+        justify-content: center;
+      }
+
+      .page-header h2 {
+        font-size: 2rem;
+      }
+
+      .page-header p {
+        font-size: 1rem;
+      }
+
+      :root {
+        --header-height: 150px;
+        --nav-height: 120px;
+      }
+
+      body {
+        padding-top: calc(var(--header-height) + var(--nav-height));
+      }
+    }
+
+    @media (max-width: 576px) {
+      .category-grid {
+        display: grid;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+
+      .contact-info {
+        flex-direction: column;
+      }
+
+      .logo-container h1 {
+        font-size: 1.2rem;
+      }
+
+      .language-option {
+        margin-left: 0.5rem;
+      }
+
+      .social-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .social-links a {
+        margin: 0.5rem;
+      }
+
+      :root {
+        --header-height: 150px;
+        --nav-height: 120px;
+      }
+
+      body {
+        padding-top: calc(var(--header-height) + var(--nav-height));
+      }
+    }
+
+    @media (max-width: 200px) {
+      .category-grid {
+        display: grid;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+
+      .contact-info {
+        flex-direction: column;
+      }
+
+      .logo-container h1 {
+        font-size: 1.2rem;
+      }
+
+      .language-option {
+        margin-left: 0.5rem;
+      }
+
+      .social-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .social-links a {
+        margin: 0.5rem;
+      }
+
+      :root {
+        --header-height: 150px;
+        --nav-height: 120px;
+      }
+
+      body {
+        padding-top: calc(var(--header-height) + var(--nav-height));
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Main Header with Logo and Contact Info -->
+  <header>
+    <div class="container">
+      <div class="top-header">
+        <div class="logo-container">
+          <img src="MMCO Logo.jpg" alt="شعار شركة الفلزات الحديثة للتجارة">
+          <h1>شركة الفلزات الحديثة للتجارة</h1>
+        </div>
+        <div class="contact-info">
+          <a href="mailto:mmco.trading@gmail.com" lang="en" dir="ltr"><i class="fas fa-envelope"
+              style="margin: 0 7px;"></i> mmco.trading@gmail.com</a>
+          <p lang="en" dir="ltr"><i class="fas fa-phone" style="margin: 0 7px;"></i> +966 504430477 | +966 560466558 |
+            +966 567438493</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav class="main-nav">
+    <div class="container">
+      <div class="nav-container">
+        <ul class="nav-links">
+          <li><a href="arabhome.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+          <li><a href="arabproducts.html"><i class="fas fa-box-open"></i> منتجاتنا</a></li>
+          <li><a href="arababoutus.html"><i class="fas fa-info-circle"></i> من نحن</a></li>
+        </ul>
+
+        <div class="language-selector">
+          <div class="language-option">
+            <a href="products.html">
+              <img src="English.png" alt="علم اللغة الإنجليزية">
+              <span>English</span>
+            </a>
+          </div>
+          <div class="language-option">
+            <a href="#">
+              <img src="Arabic.jpg" alt="علم اللغة العربية">
+              <span>العربية</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- قسم فئات المنتجات -->
+    <section class="products-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>فئات مميزة</h2>
+        </div>
+
+        <div class="category-grid">
+          <!-- الفئة 1: الأثاث -->
+          <div class="product-card">
+            <div class="image-container">
+              <img src="furnitureslider1.jpg" alt="أثاث من الفولاذ المقاوم للصدأ" class="card-image active">
+              <img src="furnitureslider2.jpg" alt="تصميم أثاث من الفولاذ المقاوم للصدأ" class="card-image">
+              <img src="furnitureslider3.jpg" alt="مثال على أثاث من الفولاذ المقاوم للصدأ" class="card-image">
+            </div>
+            <div class="card-content">
+              <h3><i class="fa-solid fa-couch"></i> الأثاث</h3>
+              <p>تصاميم أنيقة من الأثاث المصنوع من الفولاذ المقاوم للصدأ تجمع بين المتانة والجماليات العصرية لمساحات
+                منزلك ومكتبك.</p>
+              <a href="#furniture-collection" class="view-collection-btn">عرض المجموعة</a>
+            </div>
+          </div>
+
+          <!-- الفئة 2: تنفيذاتنا -->
+          <div class="product-card">
+            <div class="image-container">
+              <img src="ourslider1.jpg" alt="" class="card-image active">
+              <img src="ourslider2.jpg" alt="" class="card-image">
+              <img src="ourslider3.jpg" alt="" class="card-image">
+            </div>
+            <div class="card-content">
+              <h3><i class="fa-solid fa-hammer"></i> تنفيذاتنا</h3>
+              <p>استكشف مجموعة أعمالنا من التصاميم المخصصة التي تُظهر حرفيتنا ونهجنا المبتكر في حلول الفولاذ المقاوم
+                للصدأ.</p>
+              <a href="#implementations-collection" class="view-collection-btn">عرض المجموعة</a>
+            </div>
+          </div>
+
+          <!-- الفئة 3: المنتجات العامة -->
+          <div class="product-card">
+            <div class="image-container">
+              <img src="generalslider1.jpg" alt="الشعارات واللافتات" class="card-image active">
+              <img src="generalslider2.jpg" alt="تصاميم الشعارات" class="card-image">
+              <img src="generalslider3.jpg" alt="لافتات الشركات" class="card-image">
+            </div>
+            <div class="card-content">
+              <h3><i class="fa-solid fa-warehouse"></i> المنتجات العامة</h3>
+              <p>شعارات ولافتات مميزة من الفولاذ المقاوم للصدأ تترك انطباعاً دائماً لشركتك أو مؤسستك.</p>
+              <a href="#logos-signage-collection" class="view-collection-btn">عرض المجموعة</a>
+            </div>
+          </div>
+
+          <!-- الفئة 4: السلالم -->
+          <div class="product-card">
+            <div class="image-container">
+              <img src="stairslider1.jpg" alt="العناصر المعمارية" class="card-image active">
+              <img src="stairslider2.jpg" alt="التطبيقات المعمارية" class="card-image">
+              <img src="stairslider3.jpg" alt="مكونات البناء" class="card-image">
+            </div>
+            <div class="card-content">
+              <h3><i class="fa-solid fa-stairs"></i> السلالم والدرابزينات</h3>
+              <p>سلالم ودرابزينات أنيقة من الفولاذ المقاوم للصدأ تضيف الرقي والمتانة لأي مساحة معمارية.</p>
+              <a href="#staircases-handrails-collection" class="view-collection-btn">عرض المجموعة</a>
+            </div>
+          </div>
+
+          <!-- الفئة 5: المطبخ والحمام -->
+          <div class="product-card">
+            <div class="image-container">
+              <img src="kitchenslider1.jpg" alt="المطبخ والحمام" class="card-image active">
+              <img src="kitchenslider2.jpg" alt="حلول المطبخ" class="card-image">
+              <img src="kitchenslider3.png" alt="تجهيزات الحمام" class="card-image">
+            </div>
+            <div class="card-content">
+              <h3><i class="fa-solid fa-sink"></i> المطبخ والحمام</h3>
+              <p>تجهيزات وإكسسوارات مميزة من الفولاذ المقاوم للصدأ مصممة لإضافة الأناقة والوظائف العملية لمساحات المطبخ
+                والحمام.</p>
+              <a href="#kitchen-bath-collection" class="view-collection-btn">عرض المجموعة</a>
+            </div>
+          </div>
+
+          <!-- الفئة 6: ألواح الفولاذ -->
+          <div class="product-card">
+            <div class="image-container">
+              <img src="sheetsslider1.jpg" alt="ألواح الفولاذ المقاوم للصدأ" class="card-image active">
+              <img src="sheetsslider2.jpg" alt="معالجة ألواح الفولاذ" class="card-image">
+              <img src="sheetsslider3.jpg" alt="تطبيقات ألواح الفولاذ" class="card-image">
+            </div>
+            <div class="card-content">
+              <h3><i class="fa-solid fa-layer-group"></i> ألواح الفولاذ المقاوم للصدأ</h3>
+              <p>ألواح فولاذ مقاوم للصدأ عالية الجودة بدرجات وتشطيبات وأبعاد متنوعة لتلبية جميع احتياجات التصنيع.</p>
+              <a href="#steel-sheets-collection" class="view-collection-btn">عرض المجموعة</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- أقسام المجموعات التفصيلية -->
+
+    <!-- قسم مجموعة الأثاث -->
+    <section id="furniture-collection" class="collection-section">
+      <div class="container">
+        <div class="collection-header">
+          <h2>مجموعة الأثاث</h2>
+          <p>يجمع أثاثنا المميز من الفولاذ المقاوم للصدأ بين التصميم المعاصر والمتانة الاستثنائية. يتم تصنيع كل قطعة
+            بدقة لضمان جاذبية جمالية وتميز وظيفي.</p>
+        </div>
+
+        <div class="process-title">
+          <h3>منتجات الأثاث لدينا</h3>
+        </div>
+
+        <div class="process-grid">
+
+          <!-- بطاقة المنتج 1 - صورة واحدة -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="furnitureProduct1.jpg" alt="">
+            </div>
+            <div class="process-content">
+              <h4>تصميم الطاولة رقم 1</h4>
+              <p>طاولات راقية من الفولاذ المقاوم للصدأ تعزز المساحات الحديثة بوظائف أنيقة.</p>
+            </div>
+          </div>
+
+          <!-- بطاقة المنتج 2 - صورة واحدة -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="furnitureProduct2.jpg" alt="">
+            </div>
+            <div class="process-content">
+              <h4>تصميم الطاولة رقم 2</h4>
+              <p>طاولات أنيقة ومتينة من الفولاذ المقاوم للصدأ للديكورات الداخلية المعاصرة.</p>
+            </div>
+          </div>
+
+          <!-- بطاقة المنتج 3 - صورة واحدة -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="furnitureProduct3.jpg" alt="">
+            </div>
+            <div class="process-content">
+              <h4>تصميم الطاولة رقم 3</h4>
+              <p>طاولات أنيقة وأنيقة من الفولاذ المقاوم للصدأ، مثالية للبيئات الحديثة.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم مجموعة تنفيذاتنا -->
+    <section id="implementations-collection" class="collection-section">
+      <div class="container">
+        <div class="collection-header">
+          <h2>تنفيذاتنا</h2>
+          <p>استكشف مجموعة أعمالنا من مشاريع الفولاذ المقاوم للصدأ المخصصة التي تُظهر حرفيتنا ودقتنا ونهجنا المبتكر في
+            تصنيع الفولاذ المقاوم للصدأ.</p>
+        </div>
+
+        <div class="process-title">
+          <h3>المشاريع المميزة</h3>
+        </div>
+
+        <div class="process-grid">
+          <!-- المشروع 1 -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="universitylogo.jpg" alt="">
+            </div>
+            <div class="process-content">
+              <h4>شعار الجامعة</h4>
+              <p>صناعة شعار جامعي مميز يجسد التميز الأكاديمي والابتكار، يدمج تصميمنا بين التقاليد والحداثة لإنشاء هوية
+                بصرية دائمة.</p>
+            </div>
+          </div>
+
+          <!-- المشروع 2 -->
+          <div class="process-card">
+            <div class="process-images">
+              <div class="before-image">
+                <img src="columndressing1.jpg" alt="قبل">
+              </div>
+              <div class="after-image">
+                <img src="columndressing2.jpg" alt="بعد">
+              </div>
+            </div>
+            <div class="process-content">
+              <h4>كسوة الأعمدة</h4>
+              <p>تعزيز الهياكل بكسوة أعمدة أنيقة من الفولاذ المقاوم للصدأ، تحول حلولنا الأعمدة إلى معالم معمارية حديثة
+                بتشطيبات متينة وأنيقة.</p>
+            </div>
+          </div>
+
+          <!-- المشروع 3 -->
+          <div class="process-card">
+            <div class="process-images">
+              <div class="before-image">
+                <img src="tablelegs1.jpg" alt="قبل">
+              </div>
+              <div class="after-image">
+                <img src="tablelegs3.jpg" alt="بعد">
+              </div>
+            </div>
+            <div class="process-content">
+              <h4>أرجل الطاولات</h4>
+              <p>تصميم أرجل طاولات أنيقة تجمع بين القوة والأناقة، مما يعزز أي طاولة بلمسة عصرية وراقية.</p>
+            </div>
+          </div>
+
+          <!-- المشروع 4 -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="doormaking1.jpg" alt="">
+            </div>
+            <div class="process-content">
+              <h4>تصميم الأبواب غير المكسوة</h4>
+              <p>صناعة أبواب غير مكسوة توفر قماشاً فارغاً للتخصيص، تجمع بين الوظائف الأساسية وإمكانية التشطيبات الجمالية
+                الشخصية.</p>
+            </div>
+          </div>
+
+          <!-- المشروع 5 -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="doormaking4.jpg" alt="">
+            </div>
+            <div class="process-content">
+              <h4>تصميم الأبواب</h4>
+              <p>إنشاء تصاميم مبتكرة للأبواب تمزج بين الوظائف العملية والجاذبية الجمالية، مما يوفر مداخل آمنة وأنيقة
+                للمساحات الحديثة.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم المجموعة العامة -->
+    <section id="logos-signage-collection" class="collection-section">
+      <div class="container">
+        <div class="collection-header">
+          <h2>منتجات الفولاذ المقاوم للصدأ العامة</h2>
+          <p>ارتقِ بحضور علامتك التجارية مع منتجاتنا المتفوقة من الفولاذ المقاوم للصدأ. نقدم حلولاً استثنائية وقوية تعزز
+            كلاً من الوظائف والأناقة لمختلف التطبيقات عبر الصناعات.</p>
+        </div>
+
+        <div class="process-title">
+          <h3>المنتجات العامة</h3>
+        </div>
+
+        <div class="process-grid">
+          <!-- المنتج 1 -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="electriccloset2.jpg" alt="لافتات شعار ثلاثية الأبعاد">
+            </div>
+            <div class="process-content">
+              <h4>خزانة قواطع الدوائر الكهربائية</h4>
+              <p>خزائن قواطع دوائر كهربائية قوية مصممة من الفولاذ المقاوم للصدأ الأنيق، تتميز بتصميم متين لضمان السلامة
+                الموثوقة والجماليات الحديثة.</p>
+            </div>
+          </div>
+
+          <!-- المنتج 2 -->
+          <div class="process-card">
+            <div class="process-images">
+              <div class="before-image opened-image">
+                <img src="trap3.jpg" alt="قبل - تصميم الشعار">
+              </div>
+              <div class="after-image closed-image">
+                <img src="trap4.jpg" alt="بعد - اللافتات المركبة">
+              </div>
+            </div>
+            <div class="process-content">
+              <h4>مصائد الدهون</h4>
+              <p>مصائد دهون متينة مصنوعة من الفولاذ المقاوم للصدأ، مصممة للكفاءة والجماليات الحديثة في أي إعدادات
+                للمطبخ.</p>
+            </div>
+          </div>
+
+          <!-- المنتج 3 -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="breadmaker1.jpg" alt="لافتات إرشادية">
+            </div>
+            <div class="process-content">
+              <h4>غرفة تخمير العجين</h4>
+              <p>غرف تخمير عجين حديثة مصنوعة من الفولاذ المقاوم للصدأ، مصممة للأداء الأمثل والأسلوب المعاصر في بيئات
+                الخبز المهنية.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم مجموعة السلالم والدرابزينات -->
+    <section id="staircases-handrails-collection" class="collection-section">
+      <div class="container">
+        <div class="collection-header">
+          <h2>السلالم والدرابزينات</h2>
+          <p>تجمع سلالمنا ودرابزيناتنا المخصصة من الفولاذ المقاوم للصدأ بين السلامة الهيكلية والتميز الجمالي، مما يخلق
+            ميزات معمارية مذهلة لأي مساحة.</p>
+        </div>
+
+        <div class="process-title">
+          <h3>حلول السلالم</h3>
+        </div>
+
+        <div class="process-grid">
+          <!-- العنصر 1 -->
+          <div class="process-card">
+            <div class="process-images">
+              <div class="before-image">
+                <img src="staircasebefore1.jpg" alt="قبل - تصميم السلم">
+              </div>
+              <div class="after-image">
+                <img src="staircaseafter1.jpg" alt="بعد - السلم المكتمل">
+              </div>
+            </div>
+            <div class="process-content">
+              <h4>تنفيذ السلالم</h4>
+              <p>حلول سلالم أنيقة تعمل كوسيلة نقل عمودية وظيفية وكميزات تصميم مذهلة.</p>
+            </div>
+          </div>
+
+          <!-- العنصر 2 -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="staircase4.jpg" alt="">
+            </div>
+            <div class="process-content">
+              <h4>تصميم سلم مزخرف</h4>
+              <p>تصاميم حديثة تجمع بين الفولاذ المقاوم للصدأ وزخارف إضافية لمظهر راقٍ ومعاصر.</p>
+            </div>
+          </div>
+
+          <!-- العنصر 3 -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="staircase1.jpg" alt="">
+            </div>
+            <div class="process-content">
+              <h4>تصميم سلم خشبي</h4>
+              <p>تصاميم معاصرة باستخدام الخشب والفولاذ المقاوم للصدأ، معززة بتفاصيل أنيقة لمظهر راقٍ وحديث.</p>
+            </div>
+          </div>
+
+          <!-- العنصر 4 -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="staircase2.jpg" alt="">
+            </div>
+            <div class="process-content">
+              <h4>تصميم سلم عام</h4>
+              <p>إبداعات حديثة مصنوعة من الفولاذ المقاوم للصدأ، تتميز بتصاميم أنيقة وتحسينات إضافية لجمالية راقية
+                ومعاصرة.</p>
+            </div>
+          </div>
+
+          <!-- العنصر 5 -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="staircase3.jpg" alt="">
+            </div>
+            <div class="process-content">
+              <h4>تصميم سلم مزخرف</h4>
+              <p>تصاميم أنيقة باللونين الأسود والذهبي، مصنوعة من الفولاذ المقاوم للصدأ لجاذبية فاخرة ومعاصرة.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم مجموعة المطبخ والحمام -->
+    <section id="kitchen-bath-collection" class="collection-section">
+      <div class="container">
+        <div class="collection-header">
+          <h2>المطبخ والحمام</h2>
+          <p>حوّل مساحات المطبخ والحمام الخاصة بك مع تجهيزاتنا وإكسسواراتنا المميزة من الفولاذ المقاوم للصدأ التي تجمع
+            بين الوظائف العملية والتصميم الأنيق.</p>
+        </div>
+
+        <div class="process-title">
+          <h3>حلول المطبخ والحمام</h3>
+        </div>
+
+        <div class="process-grid">
+          <!-- الحل 1 -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="kitchenProduct1.jpg" alt="سطح طاولة المطبخ">
+            </div>
+            <div class="process-content">
+              <h4>حوض المطبخ</h4>
+              <p>أحواض قوية وسهلة التنظيف من الفولاذ المقاوم للصدأ، مصممة خصيصًا للمطابخ السكنية والتجارية، مما يضمن
+                النظافة والمتانة الدائمة.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم مجموعة ألواح الفولاذ -->
+    <section id="steel-sheets-collection" class="collection-section">
+      <div class="container">
+        <div class="collection-header">
+          <h2>ألواح الفولاذ المقاوم للصدأ</h2>
+          <p>نقدم ألواح فولاذ مقاوم للصدأ ذات جودة عالية بدرجات وسماكات وتشطيبات متنوعة لتناسب جميع التطبيقات الصناعية
+            والمعمارية.</p>
+        </div>
+
+        <div class="process-title">
+          <h3>جدول ألواح الفولاذ المقاوم للصدأ</h3>
+        </div>
+
+        <div class="table-container">
+          <table class="steel-sheets-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>النوع</th>
+                <th>الأبعاد</th>
+                <th>التشطيب</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>GOLD 304</td>
+                <td>أحجام مختلفة</td>
+                <td>فولاذ مقاوم للصدأ ذهبي</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>BA 430</td>
+                <td>أحجام مختلفة</td>
+                <td>فولاذ مقاوم للصدأ لامع</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>NO.4 304</td>
+                <td>أحجام مختلفة</td>
+                <td>فولاذ مقاوم للصدأ غير لامع</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>NO.8 304</td>
+                <td>أحجام مختلفة</td>
+                <td>تشطيب مرآة</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>NO.8 316</td>
+                <td>أحجام مختلفة</td>
+                <td>تشطيب مرآة</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>304-2B, NO.1</td>
+                <td>أحجام مختلفة</td>
+                <td>تشطيب غير لامع</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>304 Gold</td>
+                <td>أحجام مختلفة</td>
+                <td>تشطيب مرآة ذهبي</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <div class="footer-logo">
+              <img src="MMCO Logo.jpg" alt="شعار شركة الفلزات الحديثة للتجارة">
+              <h3>شركة الفلزات الحديثة للتجارة</h3>
+            </div>
+            <p>متخصصون في تعديل الفولاذ المقاوم للصدأ، نقدم حلولاً مخصصة ذات جودة عالية لتلبية جميع احتياجات تصنيع
+              المعادن. مع التزامنا بالتميز، نقدم مجموعة واسعة من الخدمات، بما في ذلك القص والثني واللحام والتشطيب. يضمن
+              فريق الخبراء لدينا الدقة والمتانة في كل مشروع، لخدمة مختلف الصناعات والتطبيقات.</p>
+
+            <div class="social-links">
+              <a href="https://www.facebook.com/profile.php?id=61574397020303" target="_blank"><i
+                  class="fab fa-facebook"></i> MMCO
+                KSA</a>
+              <a href="https://www.instagram.com/mmco_ksa?igsh=MWZnc3VlaDg3d3pieg==" target="_blank"><i
+                  class="fab fa-instagram"></i>
+                mmco_ksa</a>
+              <a href="https://x.com/mmco_ksa" target="_blank"><i class="fa-brands fa-x-twitter"></i> mmco_ksa</a>
+            </div>
+          </div>
+
+          <div class="footer-contact">
+            <h3>اتصل بنا</h3>
+            <p><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</p>
+            <a href="mailto:mmco.trading@gmail.com"><i class="fas fa-envelope"></i> mmco.trading@gmail.com</a>
+            <p><i class="fas fa-phone"></i> +966504430477</p>
+            <p><i class="fas fa-phone"></i> +966560466558</p>
+            <p><i class="fas fa-phone"></i> +966567438493</p>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center; margin-top: 10px;">
+          <img src="ksaLogo.png" alt="" style="width: 10%;">
+        </div>
+        <div class="copyright">
+          &copy; 2025 شركة الفلزات الحديثة للتجارة. جميع الحقوق محفوظة.
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+<script>
+  // Image Slideshow for Product Cards
+  document.addEventListener('DOMContentLoaded', function () {
+    // Get all product cards
+    const productCards = document.querySelectorAll('.product-card');
+
+    // For each product card, set up the image slideshow
+    productCards.forEach(card => {
+      const images = card.querySelectorAll('.card-image');
+      if (images.length > 1) {
+        let currentIndex = 0;
+
+        // Show the first image
+        images[0].classList.add('active');
+
+        // Set up interval to switch images
+        setInterval(() => {
+          // Hide current image
+          images[currentIndex].classList.remove('active');
+
+          // Update index to next image
+          currentIndex = (currentIndex + 1) % images.length;
+
+          // Show next image
+          images[currentIndex].classList.add('active');
+        }, 3000); // Change image every 3 seconds
+      }
+    });
+
+    // Back to Top Button functionality
+    const backToTopButton = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('visible');
+      } else {
+        backToTopButton.classList.remove('visible');
+      }
+    });
+
+    backToTopButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+
+</html>

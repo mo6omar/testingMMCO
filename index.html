@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="AL Filizat Al Haditha Trading Co.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="AL Filizat Al Haditha Trading Co. - Specializing in stainless steel modification in Riyadh, KSA">
+  <!-- <title>AL Filizat Al Haditha Trading Co. | Stainless Steel Specialists</title> -->
+  <title>MMCO Trading Co.</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <!-- Google Fonts - Add Tajawal for Arabic -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset CSS */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Global Styles */
+    :root {
+      --primary-color: #1a5276;
+      --secondary-color: #2980b9;
+      --accent-color: #f39c12;
+      --text-color: #333;
+      --light-bg: #f9f9f9;
+      --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      --transition: all 0.3s ease;
+      --header-height: 80px;
+      /* For fixed header calculation */
+      --nav-height: 60px;
+      /* For fixed nav calculation */
+    }
+
+    body {
+      font-family: 'Tajawal', sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+      background-color: var(--light-bg);
+      /* Add padding for fixed headers */
+      padding-top: calc(var(--header-height) + var(--nav-height));
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--primary-color);
+      transition: var(--transition);
+    }
+
+    a:hover {
+      color: var(--accent-color);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      height: var(--header-height);
+    }
+
+    .top-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      flex-wrap: wrap;
+      height: 100%;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .contact-info p,
+    .contact-info a {
+      margin: 0.3rem 1.5rem 0.3rem 0;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+
+    .contact-info i {
+      margin-right: 0.5rem;
+      color: var(--accent-color);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      width: 50px;
+      margin-right: 1rem;
+      border-radius: 100%;
+    }
+
+    .logo-container h1 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: white;
+    }
+
+    /* Navigation */
+    .main-nav {
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 0.5rem 0;
+      position: fixed;
+      top: var(--header-height);
+      left: 0;
+      right: 0;
+      z-index: 999;
+      height: var(--nav-height);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+    }
+
+    .nav-links {
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-right: 1.5rem;
+    }
+
+    .nav-links a {
+      color: var(--primary-color);
+      font-weight: 500;
+      font-size: 1rem;
+      padding: 0.5rem 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-links i {
+      margin-right: 0.5rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-color);
+    }
+
+    .language-selector {
+      display: flex;
+      align-items: center;
+    }
+
+    .language-option {
+      display: flex;
+      align-items: center;
+      margin-left: 1rem;
+    }
+
+    .language-option a {
+      display: flex;
+      align-items: center;
+      color: var(--primary-color);
+      transition: transform 0.2s ease;
+      padding: 4px;
+    }
+
+    .language-option a:hover {
+      transform: translateY(-2px);
+      color: var(--accent-color);
+    }
+
+    .language-option img {
+      width: 35px;
+      height: 20px;
+      margin-right: 0.5rem;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      padding: 0;
+      /* Remove padding for full width */
+      margin-bottom: 2rem;
+      background-color: black;
+    }
+
+    .image-slider-container {
+      width: 100%;
+      max-width: 100%;
+      /* Ensure full width */
+      padding: 0;
+      /* Remove padding */
+      margin: 0 auto;
+      /* Center the slider */
+    }
+
+    .image-slider {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      height: 600px;
+      /* Increased height for modern look */
+      box-shadow: var(--card-shadow);
+      margin-bottom: 2rem;
+    }
+
+    .slider-image {
+      flex: 0 0 100%;
+      height: 100%;
+      object-fit: fill;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .slider-image.active {
+      opacity: 0.75;
+    }
+
+    .slider-text {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 1.5rem;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      text-align: center;
+    }
+
+    .slider-text.active {
+      opacity: 1;
+    }
+
+    .slider-text h2 {
+      font-size: 2rem;
+      /* Increased for modern look */
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .slider-text p {
+      font-size: 1.2rem;
+      /* Increased for modern look */
+    }
+
+
+    /* Card Section */
+    .card-section {
+      margin: 2rem 0;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--card-shadow);
+      transition: var(--transition);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-img {
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      transition: var(--transition);
+    }
+
+    .card:hover .card-img img {
+      transform: scale(1.05);
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem;
+      height: calc(100% - 200px);
+      /* Adjust based on the height of the `.card-img` */
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--primary-color);
+    }
+
+    .card-text {
+      color: #666;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      /* Limits the text to 3 lines */
+      -webkit-box-orient: vertical;
+    }
+
+    .card-btn {
+      margin-top: auto;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: var(--primary-color);
+      color: white;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: var(--transition);
+      align-self: start;
+      /* Centers the button if there's space */
+    }
+
+    .card-btn:hover {
+      background-color: var(--accent-color);
+      color: white;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 2rem 0;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 2rem;
+    }
+
+    .footer-contact h3 {
+      margin-bottom: 23px;
+    }
+
+    .footer-info {
+      padding-right: 1rem;
+    }
+
+    .footer-info p {
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .footer-logo img {
+      width: 40px;
+      margin-right: 0.5rem;
+      border-radius: 100%;
+      background-color: white;
+    }
+
+    .footer-logo h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .social-links a {
+      display: flex;
+      align-items: center;
+      color: white;
+      font-size: 0.9rem;
+      transition: var(--transition);
+    }
+
+    .social-links a:hover {
+      color: var(--accent-color);
+      transform: translateY(-3px);
+    }
+
+    .social-links i {
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+    }
+
+    .copyright {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.7);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 1rem;
+    }
+
+    /* Footer Contact */
+    .footer-contact p,
+    .footer-contact a {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.8rem;
+      color: white;
+    }
+
+    .footer-contact i {
+      min-width: 20px;
+      margin-right: 0.8rem;
+      color: var(--accent-color);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 992px) {
+      .top-header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .contact-info {
+        justify-content: center;
+        margin-top: 1rem;
+      }
+
+      .footer-content {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-contact {
+        text-align: center;
+      }
+
+      .footer-contact p,
+      .footer-contact a {
+        justify-content: center;
+      }
+
+      .social-links {
+        justify-content: center;
+      }
+
+      /* Adjusted heights for smaller screens */
+      :root {
+        --header-height: 120px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-container {
+        flex-direction: column;
+      }
+
+      .nav-links {
+        margin-bottom: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .nav-links li {
+        margin: 0.5rem 0.75rem;
+      }
+
+      .language-selector {
+        justify-content: center;
+      }
+
+      .contact-info p,
+      .contact-info a {
+        margin: 0.3rem 0.7rem;
+        justify-content: center;
+      }
+
+      .image-slider {
+        height: 400px;
+      }
+
+      .footer-logo {
+        justify-content: center;
+      }
+
+
+      :root {
+        --header-height: 150px;
+        --nav-height: 120px;
+      }
+
+      body {
+        padding-top: calc(var(--header-height) + var(--nav-height));
+      }
+    }
+
+    @media (max-width: 576px) {
+      .card-grid {
+        display: grid;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+
+      .contact-info {
+        flex-direction: column;
+      }
+
+      .logo-container h1 {
+        font-size: 1.2rem;
+      }
+
+      .language-option {
+        margin-left: 0.5rem;
+      }
+
+      .image-slider {
+        height: 250px;
+      }
+
+      .slider-text h2 {
+        font-size: 1.4rem;
+      }
+
+      .slider-text p {
+        font-size: 0.9rem;
+      }
+
+      .social-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .social-links a {
+        margin: 0.5rem;
+      }
+
+      :root {
+        --header-height: 150px;
+        --nav-height: 120px;
+      }
+
+      body {
+        padding-top: calc(var(--header-height) + var(--nav-height));
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Main Header with Logo and Contact Info -->
+  <header>
+    <div class="container">
+      <div class="top-header">
+        <div class="logo-container">
+          <img src="MMCO Logo.jpg" alt="AL Filizat Al Haditha Trading Co. Logo">
+          <h1>MMCO Trading Co.</h1>
+        </div>
+        <div class="contact-info">
+          <a href="mailto:mmco.trading@gmail.com"><i class="fas fa-envelope"></i> mmco.trading@gmail.com</a>
+          <p><i class="fas fa-phone"></i> +966 504430477 | +966 560466558 | +966 567438493</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav class="main-nav">
+    <div class="container">
+      <div class="nav-container">
+        <ul class="nav-links">
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="products.html"><i class="fas fa-box-open"></i> Our Products</a></li>
+          <li><a href="aboutus.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+        </ul>
+
+        <div class="language-selector">
+          <div class="language-option">
+            <a href="#">
+              <img src="English.png" alt="English Flag">
+              <span>English</span>
+            </a>
+          </div>
+          <div class="language-option">
+            <a href="arabhome.html">
+              <img src="Arabic.jpg" alt="Arabic Flag">
+              <span>العربية</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section with Image Slider -->
+    <section class="hero-section">
+      <div class="image-slider-container">
+        <div class="image-slider">
+          <img class="slider-image active" src="main1.jpg" alt="Stainless Steel Products">
+          <img class="slider-image" src="main2.jpg" alt="Metal Fabrication">
+          <img class="slider-image" src="main3.jpg" alt="Custom Solutions">
+
+          <!-- Text overlays for slider -->
+          <div class="slider-text active" id="text-1">
+            <h2>Excellence in Stainless Steel Craftsmanship</h2>
+            <p>Premium quality materials with superior finishing for lasting elegance</p>
+          </div>
+          <div class="slider-text" id="text-2">
+            <h2>Precision in Every Detail</h2>
+            <p>Custom metal fabrication solutions for your unique requirements</p>
+          </div>
+          <div class="slider-text" id="text-3">
+            <h2>Innovation Meets Tradition</h2>
+            <p>Modern techniques with traditional craftsmanship for exceptional results</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card Section -->
+    <section class="card-section">
+      <div class="container">
+        <div class="card-grid">
+          <!-- Card 1 -->
+          <div class="card">
+            <div class="card-img">
+              <img src="ad1.jpg" alt="Stainless Steel Products">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Designs For Houses</h3>
+              <p class="card-text">Discover our high-quality stainless steel products, crafted with precision and
+                durability in mind.</p>
+              <a href="products.html" class="card-btn">View Products</a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card">
+            <div class="card-img">
+              <img src="ad2.jpg" alt="Custom Solutions">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Designing Logos</h3>
+              <p class="card-text">We offer tailored solutions for all your metal fabrication needs, from design to
+                finished product.</p>
+              <a href="products.html" class="card-btn">View Products</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card">
+            <div class="card-img">
+              <img src="ad3.jpg" alt="Expert Craftsmanship">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Stainless Steel Sheets</h3>
+              <p class="card-text">Our skilled team ensures precision and excellence in every project, delivering
+                outstanding results.</p>
+              <a href="products.html" class="card-btn">View Products</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <div class="footer-logo">
+            <img src="MMCO Logo.jpg" alt="AL Filizat Al Haditha Trading Co. Logo">
+            <h3>MMCO Trading Co.</h3>
+          </div>
+          <p>Specializing in stainless steel modification, we deliver top-quality, customized solutions to meet all your
+            metal fabrication needs. With a commitment to excellence, we offer a wide range of services, including
+            cutting, bending, welding, and finishing. Our expert team ensures precision and durability in every project,
+            catering to various industries and applications.</p>
+
+          <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61574397020303" target="_blank"><i
+                class="fab fa-facebook"></i> MMCO KSA</a>
+            <a href="https://www.instagram.com/mmco_ksa?igsh=MWZnc3VlaDg3d3pieg==" target="_blank"><i
+                class="fab fa-instagram"></i> mmco_ksa</a>
+            <a href="https://x.com/mmco_ksa" target="_blank"><i class="fa-brands fa-x-twitter"></i> mmco_ksa</a>
+          </div>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Riyadh, Kingdom of Saudi Arabia</p>
+          <a href="mailto:mmco.trading@gmail.com"><i class="fas fa-envelope"></i> mmco.trading@gmail.com</a>
+          <p><i class="fas fa-phone"></i> +966 504430477</p>
+          <p><i class="fas fa-phone"></i> +966 560466558</p>
+          <p><i class="fas fa-phone"></i> +966 567438493</p>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; justify-content: center; margin-top: 10px;">
+        <img src="ksaLogo.png" alt="" style="width: 10%;">
+      </div>
+      <div class="copyright">
+        &copy; 2025 AL Filizat Al Haditha Trading Co. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Image Slider Functionality
+    document.addEventListener('DOMContentLoaded', function () {
+      const sliderImages = document.querySelectorAll('.slider-image');
+      const sliderTexts = document.querySelectorAll('.slider-text');
+      let currentImage = 0;
+
+      function nextImage() {
+        // Remove active class from current image and text
+        sliderImages[currentImage].classList.remove('active');
+        sliderTexts[currentImage].classList.remove('active');
+
+        // Update current image index
+        currentImage = (currentImage + 1) % sliderImages.length;
+
+        // Add active class to new image and text
+        sliderImages[currentImage].classList.add('active');
+        sliderTexts[currentImage].classList.add('active');
+      }
+
+      // Change image every 5 seconds
+      setInterval(nextImage, 3000);
+    });
+  </script>
+</body>
+
+</html>

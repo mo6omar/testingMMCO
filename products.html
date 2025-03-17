@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="AL Filizat Al Haditha Trading Co.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="AL Filizat Al Haditha Trading Co. - Specializing in stainless steel modification in Riyadh, KSA">
+  <title>MMCO Trading Co.</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <!-- Google Fonts - Add Tajawal for Arabic -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset CSS */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Global Styles */
+    :root {
+      --primary-color: #1a5276;
+      --secondary-color: #2980b9;
+      --accent-color: #f39c12;
+      --text-color: #333;
+      --light-bg: #f9f9f9;
+      --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      --transition: all 0.3s ease;
+      --header-height: 80px;
+      /* For fixed header calculation */
+      --nav-height: 60px;
+      /* For fixed nav calculation */
+    }
+
+    body {
+      font-family: 'Tajawal', sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+      background-color: var(--light-bg);
+      /* Add padding for fixed headers */
+      padding-top: calc(var(--header-height) + var(--nav-height));
+      scroll-behavior: smooth;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: calc(var(--header-height) + var(--nav-height) + 20px);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--primary-color);
+      transition: var(--transition);
+    }
+
+    a:hover {
+      color: var(--accent-color);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      height: var(--header-height);
+    }
+
+    .top-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      flex-wrap: wrap;
+      height: 100%;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .contact-info p,
+    .contact-info a {
+      margin: 0.3rem 1.5rem 0.3rem 0;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+
+    .contact-info i {
+      margin-right: 0.5rem;
+      color: var(--accent-color);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      width: 50px;
+      margin-right: 1rem;
+      border-radius: 100%;
+    }
+
+    .logo-container h1 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: white;
+    }
+
+    /* Navigation */
+    .main-nav {
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 0.5rem 0;
+      position: fixed;
+      top: var(--header-height);
+      left: 0;
+      right: 0;
+      z-index: 999;
+      height: var(--nav-height);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+    }
+
+    .nav-links {
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-right: 1.5rem;
+    }
+
+    .nav-links a {
+      color: var(--primary-color);
+      font-weight: 500;
+      font-size: 1rem;
+      padding: 0.5rem 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-links i {
+      margin-right: 0.5rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-color);
+    }
+
+    .language-selector {
+      display: flex;
+      align-items: center;
+    }
+
+    .language-option {
+      display: flex;
+      align-items: center;
+      margin-left: 1rem;
+    }
+
+    .language-option a {
+      display: flex;
+      align-items: center;
+      color: var(--primary-color);
+      transition: transform 0.2s ease;
+      padding: 4px;
+    }
+
+    .language-option a:hover {
+      transform: translateY(-2px);
+      color: var(--accent-color);
+    }
+
+    .language-option img {
+      width: 35px;
+      height: 20px;
+      margin-right: 0.5rem;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+
+    /* Page Header */
+    .page-header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 2rem 0;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .page-header h2 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .page-header p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Products Category Section */
+    .products-section {
+      padding: 2rem 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .section-title h2 {
+      font-size: 2rem;
+      color: var(--primary-color);
+      position: relative;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+
+    .section-title h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background-color: var(--accent-color);
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    /* Product Card Styling (Replaced Flip Card) */
+    .product-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: var(--card-shadow);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .image-container {
+      position: relative;
+      width: 100%;
+      height: 250px;
+      overflow: hidden;
+    }
+
+    .card-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1.5s ease-in-out;
+    }
+
+    .card-image.active {
+      opacity: 1;
+    }
+
+    .card-content {
+      padding: 1.5rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+
+    .card-content h3 {
+      font-size: 1.5rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .card-content p {
+      margin-bottom: 1.5rem;
+      color: var(--text-color);
+      flex-grow: 1;
+    }
+
+    .view-collection-btn {
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      background-color: var(--accent-color);
+      color: white;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: var(--transition);
+      margin-top: auto;
+    }
+
+    .view-collection-btn:hover {
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    /* Product Collection Section */
+    .collection-section {
+      padding: 3rem 0;
+      background-color: white;
+      margin-top: 2rem;
+    }
+
+    .collection-section:nth-child(even) {
+      background-color: #f5f8fa;
+    }
+
+    .collection-header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-top: 2rem;
+    }
+
+    .collection-header h2 {
+      font-size: 2.2rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .collection-header p {
+      max-width: 800px;
+      margin: 0 auto;
+      color: #666;
+    }
+
+    .process-title {
+      text-align: center;
+      margin: 3rem 0 2rem;
+    }
+
+    .process-title h3 {
+      font-size: 1.8rem;
+      color: var(--primary-color);
+      display: inline-block;
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+
+    .process-title h3::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 2px;
+      background-color: var(--accent-color);
+    }
+
+    /* Process Cards */
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .process-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: var(--card-shadow);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .process-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .process-images {
+      display: flex;
+      height: 300px;
+    }
+
+    .before-image,
+    .after-image {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      border: solid 1px white;
+    }
+
+    .before-image::after,
+    .after-image::after {
+      content: 'BEFORE';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 5px 10px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .after-image::after {
+      content: 'AFTER';
+      left: auto;
+      right: 0;
+    }
+
+    .opened-image::after {
+      content: 'OPENED';
+    }
+
+    .closed-image::after {
+      content: 'CLOSED';
+    }
+
+    .process-images img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Single Image Card */
+    .single-image {
+      height: 300px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .single-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .process-content {
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .process-content h4 {
+      font-size: 1.3rem;
+      color: var(--primary-color);
+      margin-bottom: 0.8rem;
+    }
+
+    .process-content p {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    /* Back to Top Button */
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: var(--primary-color);
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s, visibility 0.3s;
+      z-index: 99;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .back-to-top:hover {
+      background-color: var(--accent-color);
+      color: white;
+    }
+
+
+
+    /* Footer */
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 2rem 0;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 2rem;
+    }
+
+    .footer-contact h3 {
+      margin-bottom: 23px;
+    }
+
+    .footer-info {
+      padding-right: 1rem;
+    }
+
+    .footer-info p {
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .footer-logo img {
+      width: 40px;
+      margin-right: 0.5rem;
+      border-radius: 100%;
+      background-color: white;
+    }
+
+    .footer-logo h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .social-links a {
+      display: flex;
+      align-items: center;
+      color: white;
+      font-size: 0.9rem;
+      transition: var(--transition);
+    }
+
+    .social-links a:hover {
+      color: var(--accent-color);
+      transform: translateY(-3px);
+    }
+
+    .social-links i {
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+    }
+
+    .copyright {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.7);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 1rem;
+    }
+
+    /* Footer Contact */
+    .footer-contact p,
+    .footer-contact a {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.8rem;
+      color: white;
+    }
+
+    .footer-contact i {
+      min-width: 20px;
+      margin-right: 0.8rem;
+      color: var(--accent-color);
+    }
+
+    /* Table container for centering */
+    .table-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    /* Steel Sheets Table Styles */
+    .steel-sheets-table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .steel-sheets-table thead {
+      background-color: #1a5276;
+      /* Primary color from your existing CSS */
+      color: white;
+    }
+
+    .steel-sheets-table th {
+      padding: 1rem;
+      text-align: left;
+      font-weight: 500;
+    }
+
+    .steel-sheets-table td {
+      padding: 0.8rem 1rem;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    .steel-sheets-table tbody tr:hover {
+      background-color: #f5f8fa;
+      transition: background-color 0.3s ease;
+    }
+
+    .steel-sheets-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Responsive adjustments just for this table */
+    @media (max-width: 768px) {
+
+      .steel-sheets-table th,
+      .steel-sheets-table td {
+        padding: 0.7rem;
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+
+      .steel-sheets-table th,
+      .steel-sheets-table td {
+        padding: 0.6rem 0.5rem;
+        font-size: 0.8rem;
+      }
+    }
+
+
+
+
+
+    /* Responsive Design */
+    @media (max-width: 992px) {
+      .top-header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .contact-info {
+        justify-content: center;
+        margin-top: 1rem;
+      }
+
+      .footer-content {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-contact {
+        text-align: center;
+      }
+
+      .footer-contact p,
+      .footer-contact a {
+        justify-content: center;
+      }
+
+      .social-links {
+        justify-content: center;
+      }
+
+      /* Adjusted heights for smaller screens */
+      :root {
+        --header-height: 120px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-container {
+        flex-direction: column;
+      }
+
+      .nav-links {
+        margin-bottom: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .nav-links li {
+        margin: 0.5rem 0.75rem;
+      }
+
+      .language-selector {
+        justify-content: center;
+      }
+
+      .contact-info p,
+      .contact-info a {
+        margin: 0.3rem 0.7rem;
+        justify-content: center;
+      }
+
+      .footer-logo {
+        justify-content: center;
+      }
+
+      .page-header h2 {
+        font-size: 2rem;
+      }
+
+      .page-header p {
+        font-size: 1rem;
+      }
+
+      :root {
+        --header-height: 150px;
+        --nav-height: 120px;
+      }
+
+      body {
+        padding-top: calc(var(--header-height) + var(--nav-height));
+      }
+    }
+
+    @media (max-width: 576px) {
+      .category-grid {
+        display: grid;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+
+      .contact-info {
+        flex-direction: column;
+      }
+
+      .logo-container h1 {
+        font-size: 1.2rem;
+      }
+
+      .language-option {
+        margin-left: 0.5rem;
+      }
+
+      .social-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .social-links a {
+        margin: 0.5rem;
+      }
+
+      :root {
+        --header-height: 150px;
+        --nav-height: 120px;
+      }
+
+      body {
+        padding-top: calc(var(--header-height) + var(--nav-height));
+      }
+    }
+
+    @media (max-width: 200px) {
+      .category-grid {
+        display: grid;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+
+      .contact-info {
+        flex-direction: column;
+      }
+
+      .logo-container h1 {
+        font-size: 1.2rem;
+      }
+
+      .language-option {
+        margin-left: 0.5rem;
+      }
+
+      .social-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .social-links a {
+        margin: 0.5rem;
+      }
+
+      :root {
+        --header-height: 150px;
+        --nav-height: 120px;
+      }
+
+      body {
+        padding-top: calc(var(--header-height) + var(--nav-height));
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Main Header with Logo and Contact Info -->
+  <header>
+    <div class="container">
+      <div class="top-header">
+        <div class="logo-container">
+          <img src="MMCO Logo.jpg" alt="AL Filizat Al Haditha Trading Co. Logo">
+          <h1>MMCO Trading Co.</h1>
+        </div>
+        <div class="contact-info">
+          <a href="mailto:mmco.trading@gmail.com"><i class="fas fa-envelope"></i> mmco.trading@gmail.com</a>
+          <p><i class="fas fa-phone"></i> +966 504430477 | +966 560466558 | +966 567438493</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav class="main-nav">
+    <div class="container">
+      <div class="nav-container">
+        <ul class="nav-links">
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="products.html"><i class="fas fa-box-open"></i> Our Products</a></li>
+          <li><a href="aboutus.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+        </ul>
+
+        <div class="language-selector">
+          <div class="language-option">
+            <a href="#">
+              <img src="English.png" alt="English Flag">
+              <span>English</span>
+            </a>
+          </div>
+          <div class="language-option">
+            <a href="arabproducts.html">
+              <img src="Arabic.jpg" alt="Arabic Flag">
+              <span>العربية</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Products Categories Section -->
+    <section class="products-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Premium Categories</h2>
+        </div>
+
+        <div class="category-grid">
+          <!-- Category 1: Furniture -->
+          <div class="product-card">
+            <div class="image-container">
+              <img src="furnitureslider1.jpg" alt="Stainless Steel Furniture" class="card-image active">
+              <img src="furnitureslider2.jpg" alt="Stainless Steel Furniture Design" class="card-image">
+              <img src="furnitureslider3.jpg" alt="Stainless Steel Furniture Example" class="card-image">
+            </div>
+            <div class="card-content">
+              <h3><i class="fa-solid fa-couch"></i> Furniture</h3>
+              <p>Elegant stainless steel furniture designs that combine durability with modern aesthetics for your home
+                and office spaces.</p>
+              <a href="#furniture-collection" class="view-collection-btn">View Collection</a>
+            </div>
+          </div>
+
+          <!-- Category 2: Our Implementations -->
+          <div class="product-card">
+            <div class="image-container">
+              <img src="ourslider1.jpg" alt="" class="card-image active">
+              <img src="ourslider2.jpg" alt="" class="card-image">
+              <img src="ourslider3.jpg" alt="" class="card-image">
+            </div>
+            <div class="card-content">
+              <h3><i class="fa-solid fa-hammer"></i> Our Implementations</h3>
+              <p>Explore our portfolio of custom designs showcasing our craftsmanship and innovative approaches to
+                stainless steel solutions.</p>
+              <a href="#implementations-collection" class="view-collection-btn">View Collection</a>
+            </div>
+          </div>
+
+          <!-- Category 3: General Products -->
+          <div class="product-card">
+            <div class="image-container">
+              <img src="generalslider1.jpg" alt="Logos & Signage" class="card-image active">
+              <img src="generalslider2.jpg" alt="Logo Designs" class="card-image">
+              <img src="generalslider3.jpg" alt="Corporate Signage" class="card-image">
+            </div>
+            <div class="card-content">
+              <h3><i class="fa-solid fa-warehouse"></i> General Products</h3>
+              <p>Premium stainless steel logos and signage that make a lasting impression for your business or
+                organization.</p>
+              <a href="#logos-signage-collection" class="view-collection-btn">View Collection</a>
+            </div>
+          </div>
+
+          <!-- Category 4: Staircase -->
+          <div class="product-card">
+            <div class="image-container">
+              <img src="stairslider1.jpg" alt="Architectural Elements" class="card-image active">
+              <img src="stairslider2.jpg" alt="Architectural Applications" class="card-image">
+              <img src="stairslider3.jpg" alt="Building Components" class="card-image">
+            </div>
+            <div class="card-content">
+              <h3><i class="fa-solid fa-stairs"></i> Staircases & Handrails</h3>
+              <p>Elegant stainless steel staircases and handrails that add sophistication and durability to any
+                architectural space.</p>
+              <a href="#staircases-handrails-collection" class="view-collection-btn">View Collection</a>
+            </div>
+          </div>
+
+          <!-- Category 5: Kitchen & Bath -->
+          <div class="product-card">
+            <div class="image-container">
+              <img src="kitchenslider1.jpg" alt="Kitchen & Bath" class="card-image active">
+              <img src="kitchenslider2.jpg" alt="Kitchen Solutions" class="card-image">
+              <img src="kitchenslider3.png" alt="Bathroom Fixtures" class="card-image">
+            </div>
+            <div class="card-content">
+              <h3><i class="fa-solid fa-sink"></i> Kitchen & Bath</h3>
+              <p>Premium stainless steel fixtures and accessories designed to add elegance and functionality to your
+                kitchen and bathroom spaces.</p>
+              <a href="#kitchen-bath-collection" class="view-collection-btn">View Collection</a>
+            </div>
+          </div>
+
+          <!-- Category 6: Steel Sheets -->
+          <div class="product-card">
+            <div class="image-container">
+              <img src="sheetsslider1.jpg" alt="Stainless Steel Sheets" class="card-image active">
+              <img src="sheetsslider2.jpg" alt="Steel Sheet Processing" class="card-image">
+              <img src="sheetsslider3.jpg" alt="Steel Sheet Applications" class="card-image">
+            </div>
+            <div class="card-content">
+              <h3><i class="fa-solid fa-layer-group"></i> Stainless Steel Sheets</h3>
+              <p>High-quality stainless steel sheets in various grades, finishes, and dimensions for all your
+                fabrication needs.</p>
+              <a href="#steel-sheets-collection" class="view-collection-btn">View Collection</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DETAILED COLLECTION SECTIONS -->
+
+    <!-- Furniture Collection Section -->
+    <section id="furniture-collection" class="collection-section">
+      <div class="container">
+        <div class="collection-header">
+          <h2>Furniture Collection</h2>
+          <p>Our premium stainless steel furniture combines contemporary design with exceptional durability. Each piece
+            is crafted with precision to ensure both aesthetic appeal and functional excellence.</p>
+        </div>
+
+        <div class="process-title">
+          <h3>Our Furniture Products</h3>
+        </div>
+
+        <div class="process-grid">
+
+          <!-- Process Card 1 - Single Image -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="furnitureProduct1.jpg" alt="">
+            </div>
+            <div class="process-content">
+              <h4>Table Design No.1</h4>
+              <p>Sophisticated stainless steel tables that enhance modern spaces with sleek functionality.</p>
+            </div>
+          </div>
+
+          <!-- Process Card 2 - Single Image -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="furnitureProduct2.jpg" alt="">
+            </div>
+            <div class="process-content">
+              <h4>Table Design No.2</h4>
+              <p>Stylish, durable stainless steel tables for contemporary interiors.</p>
+            </div>
+          </div>
+
+          <!-- Process Card 3 - Single Image -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="furnitureProduct3.jpg" alt="">
+            </div>
+            <div class="process-content">
+              <h4>Table Design No.3</h4>
+              <p>Sleek and elegant stainless steel tables, perfect for modern settings.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Implementations Collection Section -->
+    <section id="implementations-collection" class="collection-section">
+      <div class="container">
+        <div class="collection-header">
+          <h2>Our Implementations</h2>
+          <p>Explore our portfolio of custom stainless steel projects that showcase our craftsmanship, precision, and
+            innovative approaches to stainless steel fabrication.</p>
+        </div>
+
+        <div class="process-title">
+          <h3>Featured Projects</h3>
+        </div>
+
+        <div class="process-grid">
+          <!-- Project 1 -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="universitylogo.jpg" alt="">
+            </div>
+            <div class="process-content">
+              <h4>University Logo</h4>
+              <p>Crafting a distinctive university logo that embodies academic excellence and innovation, our design
+                merges tradition with modernity to create a lasting visual identity.</p>
+            </div>
+          </div>
+
+
+
+          <!-- Project 2 -->
+          <div class="process-card">
+            <div class="process-images">
+              <div class="before-image">
+                <img src="columndressing1.jpg" alt="Before">
+              </div>
+              <div class="after-image">
+                <img src="columndressing2.jpg" alt="After">
+              </div>
+            </div>
+            <div class="process-content">
+              <h4>Column Dressing</h4>
+              <p>Enhancing structures with sleek stainless steel column dressings, our solutions transform columns into
+                modern architectural highlights with durable, stylish finishes.</p>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="process-card">
+            <div class="process-images">
+              <div class="before-image">
+                <img src="tablelegs1.jpg" alt="Before">
+              </div>
+              <div class="after-image">
+                <img src="tablelegs3.jpg" alt="After">
+              </div>
+            </div>
+            <div class="process-content">
+              <h4>Table Legs</h4>
+              <p>Designing sleek table legs that combine strength and style, enhancing any table with a modern,
+                sophisticated touch.</p>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="doormaking1.jpg" alt="">
+            </div>
+            <div class="process-content">
+              <h4>Undressed Door Designing</h4>
+              <p>Crafting undressed doors that offer a blank canvas for customization, combining raw functionality with
+                the potential for personalized aesthetic finishes.</p>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="doormaking4.jpg" alt="">
+            </div>
+            <div class="process-content">
+              <h4>Door Designing</h4>
+              <p>Creating innovative door designs that blend functionality with aesthetic appeal, providing secure yet
+                stylish entrances for modern spaces.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- General Collection Section -->
+    <section id="logos-signage-collection" class="collection-section">
+      <div class="container">
+        <div class="collection-header">
+          <h2>General Stainless Steel Products</h2>
+          <p>Elevate your brand's presence with our superior stainless steel products. We offer exceptional,
+            robust solutions that enhance both functionality and style for various applications across industries.</p>
+        </div>
+
+        <div class="process-title">
+          <h3>General Products</h3>
+        </div>
+
+        <div class="process-grid">
+          <!-- Product 1 -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="electriccloset2.jpg" alt="3D Logo Signage">
+            </div>
+            <div class="process-content">
+              <h4>Electrical Circuit Breaker Cabinet</h4>
+              <p>Robust electrical circuit breaker cabinets designed in sleek stainless steel,
+                featuring durable construction for reliable safety and modern aesthetics.
+              </p>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="process-card">
+            <div class="process-images">
+              <div class="before-image opened-image">
+                <img src="trap3.jpg" alt="Before - Logo Design">
+              </div>
+              <div class="after-image closed-image">
+                <img src="trap4.jpg" alt="After - Installed Signage">
+              </div>
+            </div>
+            <div class="process-content">
+              <h4>Grease Traps</h4>
+              <p>Durable grease traps crafted from stainless steel, designed for efficiency and modern aesthetics in any
+                kitchen setup.</p>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="breadmaker1.jpg" alt="Directional Signage">
+            </div>
+            <div class="process-content">
+              <h4>Dough Fermentation Room</h4>
+              <p>Modern dough fermentation rooms crafted from stainless steel, designed for optimal performance and
+                contemporary style in professional baking environments.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Staircases & Handrails Collection Section -->
+    <section id="staircases-handrails-collection" class="collection-section">
+      <div class="container">
+        <div class="collection-header">
+          <h2>Staircases & Handrails</h2>
+          <p>Our custom stainless steel staircases and handrails combine structural integrity with aesthetic excellence,
+            creating stunning architectural features for any space.</p>
+        </div>
+
+        <div class="process-title">
+          <h3>Staircase Solutions</h3>
+        </div>
+
+        <div class="process-grid">
+          <!-- Element 1 -->
+          <div class="process-card">
+            <div class="process-images">
+              <div class="before-image">
+                <img src="staircasebefore1.jpg" alt="Before - Staircase Design">
+              </div>
+              <div class="after-image">
+                <img src="staircaseafter1.jpg" alt="After - Completed Staircase">
+              </div>
+            </div>
+            <div class="process-content">
+              <h4>Staircases Implementation</h4>
+              <p>Elegant staircase solutions that serve as both functional vertical transportation and stunning
+                design features.</p>
+            </div>
+          </div>
+
+          <!-- Element 2 -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="staircase4.jpg" alt="">
+            </div>
+            <div class="process-content">
+              <h4>Decorated Staircase Design</h4>
+              <p>Modern Designs combining stainless steel with additional decorations for a sophisticated, contemporary
+                look.
+              </p>
+            </div>
+          </div>
+
+          <!-- Element 3 -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="staircase1.jpg" alt="">
+            </div>
+            <div class="process-content">
+              <h4>Wooden Staircase Design</h4>
+              <p>Contemporary designs using wood and stainless steel, enhanced with elegant details for a sophisticated
+                and modern appearance.
+              </p>
+            </div>
+          </div>
+
+          <!-- Element 4 -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="staircase2.jpg" alt="">
+            </div>
+            <div class="process-content">
+              <h4>General Staircase Design</h4>
+              <p>Modern creations crafted from stainless steel, featuring sleek designs and additional enhancements for
+                a refined, contemporary aesthetic.
+              </p>
+            </div>
+          </div>
+
+          <!-- Element 5 -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="staircase3.jpg" alt="">
+            </div>
+            <div class="process-content">
+              <h4>Decorated Staircase Design</h4>
+              <p>Stylish designs in black and gold, crafted from stainless steel for a luxurious, contemporary appeal.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Kitchen & Bath Collection Section -->
+    <section id="kitchen-bath-collection" class="collection-section">
+      <div class="container">
+        <div class="collection-header">
+          <h2>Kitchen & Bath</h2>
+          <p>Transform your kitchen and bathroom spaces with our premium stainless steel fixtures and accessories that
+            combine functionality with elegant design.</p>
+        </div>
+
+        <div class="process-title">
+          <h3>Kitchen & Bath Solutions</h3>
+        </div>
+
+        <div class="process-grid">
+          <!-- Solution 1 -->
+          <div class="process-card">
+            <div class="single-image">
+              <img src="kitchenProduct1.jpg" alt="Kitchen Countertop">
+            </div>
+            <div class="process-content">
+              <h4>Kitchen Sink</h4>
+              <p>Sturdy, easy-to-clean stainless steel sinks, tailored for both residential
+                and commercial kitchens, ensuring lasting hygiene and durability.</p>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Steel Sheets Collection Section -->
+    <section id="steel-sheets-collection" class="collection-section">
+      <div class="container">
+        <div class="collection-header">
+          <h2>Stainless Steel Sheets</h2>
+          <p>We offer premium quality stainless steel sheets in various grades, thicknesses, and finishes to suit all
+            industrial and architectural applications.</p>
+        </div>
+
+        <div class="process-title">
+          <h3>Stainless Steel Sheets Table</h3>
+        </div>
+
+        <div class="table-container">
+          <!-- <table class="steel-sheets-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Type</th>
+                <th>Dimensions</th>
+                <th>Finish</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>GOLD 304</td>
+                <td>0.8 x 1220 x 3000 mm</td>
+                <td>Stainless Steel Gold</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>BA 430</td>
+                <td>0.5 x 1220 x 2440 mm</td>
+                <td>Stainless Steel Shiny</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>BA 430</td>
+                <td>0.9 x 1220 x 3000 mm</td>
+                <td>Stainless Steel Shiny</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>CH BA 430</td>
+                <td>0.7 x 1220 x 3000 mm</td>
+                <td>Stainless Steel Shiny</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>CH BA 430</td>
+                <td>0.8 x 1220 x 3000 mm</td>
+                <td>Stainless Steel Shiny</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>NO.4 304</td>
+                <td>0.5 x 1220 x 2440 mm</td>
+                <td>Stainless Steel Matte</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>NO.4 304</td>
+                <td>0.7 x 1220 x 3000 mm</td>
+                <td>Stainless Steel Matte</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>NO.4 304</td>
+                <td>0.8 x 1220 x 3000 mm</td>
+                <td>Stainless Steel Matte</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>NO.4 304</td>
+                <td>1.2 x 1220 x 2440 mm</td>
+                <td>Stainless Steel Matte</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>NO.4 304</td>
+                <td>1.2 x 1220 x 3000 mm</td>
+                <td>Stainless Steel Matte</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>NO.4 304</td>
+                <td>1 x 1220 x 2440 mm</td>
+                <td>Stainless Steel Matte</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>NO.4 304</td>
+                <td>1 x 1220 x 3000 mm</td>
+                <td>Stainless Steel Matte</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>NO.4 304</td>
+                <td>0.8 x 1220 x 2440 mm</td>
+                <td>Stainless Steel Matte</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>NO.4 430</td>
+                <td>0.7 x 1220 x 3000 mm</td>
+                <td>Stainless Steel Matte</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>NO.4 430</td>
+                <td>0.8 x 1220 x 2440 mm</td>
+                <td>Stainless Steel Matte</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>NO.4 430</td>
+                <td>0.8 x 1220 x 3000 mm</td>
+                <td>Stainless Steel Matte</td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>NO.4 430</td>
+                <td>0.7 x 1220 x 2440 mm</td>
+                <td>Stainless Steel Matte</td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>NO.8 304</td>
+                <td>0.8 x 1220 x 3000 mm</td>
+                <td>Mirror Finish</td>
+              </tr>
+              <tr>
+                <td>19</td>
+                <td>NO.8 316</td>
+                <td>0.8 x 1220 x 3000 mm</td>
+                <td>Mirror Finish</td>
+              </tr>
+              <tr>
+                <td>20</td>
+                <td>NO.8 316</td>
+                <td>1 x 1220 x 3000 mm</td>
+                <td>Mirror Finish</td>
+              </tr>
+              <tr>
+                <td>21</td>
+                <td>NO.8 304 Gold</td>
+                <td>1 x 1220 x 3000 mm</td>
+                <td>Gold Mirror Finish</td>
+              </tr>
+              <tr>
+                <td>22</td>
+                <td>NO.8 304 Gold</td>
+                <td>0.7 x 1220 x 3000 mm</td>
+                <td>Gold Mirror Finish</td>
+              </tr>
+              <tr>
+                <td>23</td>
+                <td>304 Gold</td>
+                <td>0.6 x 1220 x 2440 mm</td>
+                <td>Gold Mirror Finish</td>
+              </tr>
+              <tr>
+                <td>24</td>
+                <td>304</td>
+                <td>0.7 x 1220 x 2440 mm</td>
+                <td>Matte Finish</td>
+              </tr>
+              <tr>
+                <td>25</td>
+                <td>304</td>
+                <td>0.6 x 1220 x 2440 mm</td>
+                <td>Mirror Finish</td>
+              </tr>
+              <tr>
+                <td>26</td>
+                <td>304 Gold</td>
+                <td>0.7 x 1220 x 2440 mm</td>
+                <td>Gold Mirror Finish</td>
+              </tr>
+              <tr>
+                <td>27</td>
+                <td>NO.4 304</td>
+                <td>0.6 x 122 x 244 mm</td>
+                <td>Stainless Steel Matte</td>
+              </tr>
+            </tbody>
+          </table> -->
+          <table class="steel-sheets-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Type</th>
+                <th>Dimensions</th>
+                <th>Finish</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>GOLD 304</td>
+                <td>Different Sizes</td>
+                <td>Stainless Steel Gold</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>BA 430</td>
+                <td>Different Sizes</td>
+                <td>Stainless Steel Shiny</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>NO.4 304</td>
+                <td>Different Sizes</td>
+                <td>Stainless Steel Matte</td>
+              </tr>
+              <tr>
+              <tr>
+                <td>4</td>
+                <td>NO.8 304</td>
+                <td>Different Sizes</td>
+                <td>Mirror Finish</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>NO.8 316</td>
+                <td>Different Sizes</td>
+                <td>Mirror Finish</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>304-2B, NO.1</td>
+                <td>Different Sizes</td>
+                <td>Matte Finish</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>304 Gold</td>
+                <td>Different Sizes</td>
+                <td>Gold Mirror Finish</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <div class="footer-logo">
+              <img src="MMCO Logo.jpg" alt="AL Filizat Al Haditha Trading Co. Logo">
+              <h3>MMCO Trading Co.</h3>
+            </div>
+            <p>Specializing in stainless steel modification, we deliver top-quality, customized solutions to meet all
+              your
+              metal fabrication needs. With a commitment to excellence, we offer a wide range of services, including
+              cutting, bending, welding, and finishing. Our expert team ensures precision and durability in every
+              project,
+              catering to various industries and applications.</p>
+
+              <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61574397020303" target="_blank"><i class="fab fa-facebook"></i> MMCO KSA</a>
+                <a href="https://www.instagram.com/mmco_ksa?igsh=MWZnc3VlaDg3d3pieg==" target="_blank"><i class="fab fa-instagram"></i> mmco_ksa</a>
+                <a href="https://x.com/mmco_ksa" target="_blank"><i class="fa-brands fa-x-twitter"></i> mmco_ksa</a>
+              </div>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Riyadh, Kingdom of Saudi Arabia</p>
+            <a href="mailto:mmco.trading@gmail.com"><i class="fas fa-envelope"></i> mmco.trading@gmail.com</a>
+            <p><i class="fas fa-phone"></i> +966 504430477</p>
+            <p><i class="fas fa-phone"></i> +966 560466558</p>
+            <p><i class="fas fa-phone"></i> +966 567438493</p>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center; margin-top: 10px;">
+          <img src="ksaLogo.png" alt="" style="width: 10%;">
+        </div>
+        <div class="copyright">
+          &copy; 2025 AL Filizat Al Haditha Trading Co. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+<script>
+  // Image Slideshow for Product Cards
+  document.addEventListener('DOMContentLoaded', function () {
+    // Get all product cards
+    const productCards = document.querySelectorAll('.product-card');
+
+    // For each product card, set up the image slideshow
+    productCards.forEach(card => {
+      const images = card.querySelectorAll('.card-image');
+      if (images.length > 1) {
+        let currentIndex = 0;
+
+        // Show the first image
+        images[0].classList.add('active');
+
+        // Set up interval to switch images
+        setInterval(() => {
+          // Hide current image
+          images[currentIndex].classList.remove('active');
+
+          // Update index to next image
+          currentIndex = (currentIndex + 1) % images.length;
+
+          // Show next image
+          images[currentIndex].classList.add('active');
+        }, 3000); // Change image every 3 seconds
+      }
+    });
+
+    // Back to Top Button functionality
+    const backToTopButton = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('visible');
+      } else {
+        backToTopButton.classList.remove('visible');
+      }
+    });
+
+    backToTopButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+
+</html>
